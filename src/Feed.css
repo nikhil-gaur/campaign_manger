@@ -35,6 +35,7 @@
     font-size: 18px;
     line-height: 28px;
     color: #556789;
+    padding-bottom: 10px;
 }
 
 .state--active > h1 {

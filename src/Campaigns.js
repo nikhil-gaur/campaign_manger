@@ -3,7 +3,7 @@ import "./Campaigns.css";
 import CampaignRow from "./CampignRow";
 import * as dataFromFile from "./Constants";
 import moment from "moment";
-import db from "./firebase";
+
 
 function Campaigns({tab}) {
 
@@ -24,7 +24,7 @@ function Campaigns({tab}) {
 
         if(!campaignData.length){
             
-            let response = await fetch("https://run.mocky.io/v3/6df39c14-b8ab-4c31-86ce-167a5f043ae5");
+            let response = await fetch("https://run.mocky.io/v3/3eaec403-6918-415d-b1e7-ff69d0091b62");
 
             // issue > response.data is undefined
 

@@ -1,0 +1,187 @@
+.campaignRow {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    position: relative;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.campaignRow__date{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 24px;
+    left: 0%;
+    top: calc(50% - 24px/2 - 18px);
+    align-items: center;
+    
+}
+
+.campaignRow__date > h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2B416C;
+}
+
+.campaignRow__date > p {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #7788A3;
+}
+
+
+.campaignRow__campaign {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 18%;
+
+    
+}
+
+.campaignRow__campaign > img {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    height: 40px;
+    width: 40px;
+    left: 0px;
+    top: -20px;
+    border-radius: 0px;
+    margin: 2px;
+    align-self: center;
+
+
+}
+
+.campaign__info {
+    position: absolute;
+    height: 24px;
+    left: 50px;
+    top: calc(50% - 24px/2 - 23px);
+    align-items: center;
+
+}
+
+.campaign__info > h3 {
+    font-family: Roboto;
+    width: 250px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #556789;
+}
+
+.campaign__info > p {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #9CA2B7;
+
+}
+
+.campaignRow__view {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%
+
+}
+
+.campaignRow__view:hover {
+    cursor: pointer;
+}
+
+.campaignRow__view > img {
+    height: 24px;
+    width: 24px;
+}
+
+.campaignRow__view > p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7788A3;
+}
+
+.campaignRow__actions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    
+}
+
+.action__option {
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.action__option {
+    cursor: pointer;
+}
+
+
+.action__option > img {
+    height: 24px;
+    width: auto;
+    margin-right: 5px;
+}
+
+.action__option > p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7788A3;
+}
+
+.modalBackground {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease-in-out;
+    position: absolute;
+    left: auto;
+    right: auto;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #556789;
+
+}
+
+.modalShowing-true {
+    opacity: 1;
+    pointer-events: showing;
+}
+
+.modal__inner {
+    z-index: 100;
+    background-color: blue;
+    border-radius: 3px;
+    border: 2px solid black;
+    max-width: 400px;
+    max-height: 450px;
+}
+
+

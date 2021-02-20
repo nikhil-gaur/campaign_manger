@@ -1,0 +1,50 @@
+.campaigns {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px ;
+    padding-top: 0px;
+    margin-bottom: 300px
+}
+
+.campaigns__header {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1077px;
+    height: 48px;
+    align-items: center;
+    background-color: #F1F1F4;
+    box-sizing: content-box;
+}
+
+.campaignHeader__column > h2 {
+    width: 82px;
+    height: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #556789;
+    text-align: left;
+}
+
+.date {
+    flex: 0.25;
+}
+
+.campaign {
+    flex: 0.50;
+}
+
+.view {
+    flex: 0.25;
+}
+
+.actions {
+    flex: 0.5;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+

@@ -1,0 +1,29 @@
+.header {
+    position: absolute;
+    width: 1440px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    background: #1F2640;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__image {
+    position: absolute;
+    height: auto;
+    left: 182px;
+    top: 17px;
+}
+
+.header__bottom {
+    position: absolute;
+    left: 182px;
+    top: 120px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 50px;
+    color: #2B416C;
+}

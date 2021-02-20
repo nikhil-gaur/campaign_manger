@@ -1,0 +1,43 @@
+.feed {
+    position: absolute;
+    left: 200px;
+    top: 210px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: max-content;
+}
+
+.feed > hr {
+    max-width: 1077px;
+    width: 100%;
+    height: 1px;
+    color: #F1F1F4;
+    margin-bottom: 30px;
+}
+
+.state__selector {
+    display: flex;
+    width: 100%;
+}
+.state {
+    margin-right: 36px;
+}
+
+.state:hover {
+    cursor: pointer;
+}
+
+.state > h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #556789;
+}
+
+.state--active > h1 {
+    color: #83A515;
+    border-bottom: 4px solid #83A515;
+}

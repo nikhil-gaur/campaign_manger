@@ -71,6 +71,7 @@
         overflow: auto;
         left: 0;
         height: 720px;
+        width: 100%;
 
     }
     .campaigns__header {

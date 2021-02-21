@@ -8,15 +8,6 @@
     max-width: 1000px;
 }
 
-.header__bottom {
-    position: fixed;
-    top: 120px;
-    left: 9%;
-    color: #2B416C;;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-}
 
 .feed > hr {
     max-width: 1077px;
@@ -89,13 +80,18 @@
         padding-right: 10px;
     }
 }
+@media screen and (max-width: 672px) {
+    .feed {
+        left: 4%;
+        top: 170px;
+    }
+}
 
-@media screen and (max-width: 524px) {
+@media screen and (max-width: 543px) {
     .state__genral {
         display: none;
+        
     }
 
-    .header__bottom > h1 {
-        font-size: 25px;
-    }
+
 }

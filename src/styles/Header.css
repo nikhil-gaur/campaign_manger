@@ -33,11 +33,45 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #1F2640;;
+    background-color: #1F2640;
+    display: flex;
+    flex-direction: column;
+    z-index: 9;
 }
+
+
+.header__bottom {
+    background-color: white;
+}
+.header__bottom > h1 {
+    
+    color: #2B416C;;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    padding: 40px 101px;
+}
+
 
 .header__top > img {
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 9%;
+}
+
+@media screen and (max-width: 567px) {
+
+    .header {
+        border-bottom: 2px solid #1F2640;;
+    }
+    .header__bottom > h1 {
+    
+        color: #2B416C;;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        padding: 18px 27px;
+        font-size: 25px;
+    }
+    
 }

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import "../styles/Feed.css";
 import Campaigns from "./Campaigns";
 
-
 function Feed() {
 
 
@@ -35,10 +34,6 @@ function Feed() {
     return (
 
         <div className="feed">
-
-            
-                <h1 className="header__bottom">Manage Campaigns</h1>
-            
 
             <div className="state__selector" >
 

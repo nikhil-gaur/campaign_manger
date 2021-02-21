@@ -1,0 +1,101 @@
+.feed {
+    position: absolute;
+    left: 9%;
+    top: 210px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.header__bottom {
+    position: fixed;
+    top: 120px;
+    left: 9%;
+    color: #2B416C;;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.feed > hr {
+    max-width: 1077px;
+    width: 100%;
+    height: 1px;
+    color: #F1F1F4;
+    margin-bottom: 30px;
+    margin-top: 0px;
+
+}
+
+.state__selector {
+    display: flex;
+    width: 100%;
+    position: static;
+    height: 40px;
+}
+.state {
+    margin-right: 36px;
+}
+
+.state:hover {
+    cursor: pointer;
+}
+
+.state > h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #556789;
+    padding-bottom: 10px;
+}
+
+.state--active > h1 {
+    color: #83A515;
+    border-bottom: 4px solid #83A515;
+}
+
+@media screen and (max-width: 1110px) {
+    .state__selector {
+        width: 800px;
+    }
+    .feed > hr {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .state__selector {
+        width: 600px;
+    }
+    .feed > hr {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .state__selector {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .feed > hr {
+        width: 100%;
+    }
+    .feed {
+        
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 524px) {
+    .state__genral {
+        display: none;
+    }
+
+    .header__bottom > h1 {
+        font-size: 25px;
+    }
+}

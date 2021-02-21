@@ -1,12 +1,10 @@
 import './App.css';
-import Header from './Header';
-import Feed from "./Feed";
+import Header from './components/Header';
+import Feed from "./components/Feed";
 
 function App() {
   return (
     <div className="app">
-
-      {/* app seprated into 2 parts Header and Feed */}
       
       <Header />
       <Feed />

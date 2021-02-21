@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
-import "./Feed.css";
+import "../styles/Feed.css";
 import Campaigns from "./Campaigns";
 
 
 function Feed() {
 
-    // stateSelected denotes the selected Tab on Main feed, upcoming tab selected by default
 
     const [stateSelected, setStateSelected] = useState("upcomingData");
-
-    // Adding active tab class to selected Tab and setting up stateSelected variable whenevever a tab is switched
 
     const handleStateUpcoming = (event) => {
         setStateSelected("upcomingData");
@@ -39,19 +36,21 @@ function Feed() {
 
         <div className="feed">
 
+            
+                <h1 className="header__bottom">Manage Campaigns</h1>
+            
+
             <div className="state__selector" >
 
-                {/* 3 main status tabs on main feed */}
-
-                <div class="state state--active" id="feed__upcoming" onClick={handleStateUpcoming}>
-                    <h1>Upcoming Campaigns</h1>
-                </div>
-                <div class="state" id="feed__live" onClick={handleStateLive}>
-                    <h1>Live Campaigns</h1>
-                </div>
-                <div class="state" id="feed__past" onClick={handleStatePast}>
-                    <h1>Past Campaigns</h1>
-                </div>
+                <span class="state state--active" id="feed__upcoming" onClick={handleStateUpcoming}>
+                    <h1>Upcoming <span className="state__genral">Campaigns</span></h1>
+                </span>
+                <span class="state" id="feed__live" onClick={handleStateLive}>
+                    <h1>Live <span className="state__genral">Campaigns</span></h1>
+                </span>
+                <span class="state" id="feed__past" onClick={handleStatePast}>
+                    <h1>Past <span className="state__genral">Campaigns</span></h1>
+                </span>
 
             </div>
             

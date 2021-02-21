@@ -1,4 +1,4 @@
-.header {
+/* .header {
     position: absolute;
     width: 1440px;
     height: 80px;
@@ -26,4 +26,18 @@
     font-size: 20px;
     line-height: 50px;
     color: #2B416C;
+} */
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1F2640;;
+}
+
+.header__top > img {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 9%;
 }

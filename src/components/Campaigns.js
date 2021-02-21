@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import "./Campaigns.css";
+import "../styles/Campaigns.css";
 import CampaignRow from "./CampignRow";
 import * as dataFromFile from "./Constants";
 import moment from "moment";
@@ -23,8 +23,10 @@ function Campaigns({tab}) {
         console.log(!campaignData.length);
 
         if(!campaignData.length){
+
+            const url = "https://run.mocky.io/v3/78852800-5fcd-4925-ac65-b74d9d740526"
             
-            let response = await fetch("https://run.mocky.io/v3/3eaec403-6918-415d-b1e7-ff69d0091b62");
+            let response = await fetch(url);
 
             // issue > response.data is undefined
 
@@ -86,7 +88,7 @@ function Campaigns({tab}) {
 
     else if (tab=="upcomingData") {
         tabData=campaignData.filter((campaign) => {
-            if (campaign.createdOn > currentDate ) 
+            if (moment(campaign.createdOn).startOf('day').valueOf() > moment(currentDate).startOf('day').valueOf()) 
                 return campaign;
             
         });
@@ -94,29 +96,11 @@ function Campaigns({tab}) {
 
     else if (tab=="pastData") {
         tabData=campaignData.filter((campaign) => {
-            if (campaign.createdOn < currentDate ) 
+            if (moment(campaign.createdOn).startOf('day').valueOf() < moment(currentDate).startOf('day').valueOf()) 
                 return campaign;
             
         });
     }
-
-    // const upcomingData = campaignData.filter((campaign) => {
-    //     if (campaign.createdOn > currentDate ) 
-    //         return campaign;
-        
-    // });
-
-    // const pastData = campaignData.filter((campaign) => {
-    //     if (campaign.createdOn < currentDate ) 
-    //         return campaign;
-        
-    // });
-
-    // const liveData = campaignData.filter((campaign) => {
-    //     if (campaign.createdOn === currentDate ) 
-    //         return campaign;
-        
-    // });
 
     console.log(tab);
 
@@ -138,8 +122,6 @@ function Campaigns({tab}) {
                 </div>
             </div>
 
-            {/* Issue > live campaign is visible in past > resolved */}
-
             {/* mapping tabData to render campaigns that are filtered */}
 
             {tabData.map(
@@ -148,6 +130,7 @@ function Campaigns({tab}) {
 
                         updateDate={updateDate}
                         campaign={campaignRow}
+                        key={campaignRow.id}
 
                         // campaign_creationDate={campaignRow.createdOn}
                         // game_name={campaignRow.gname}

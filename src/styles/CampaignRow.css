@@ -211,7 +211,7 @@
 .modal__info > p {
     color: #9CA2B7;
     font-size: 14px;
-    padding-left: 5%;
+    
 }
 
 .periodOfPricing {
@@ -233,6 +233,12 @@
 .periodOfPricing > h3 {
     color: #7788A3;
     font-size: 16px;
+    
+}
+
+.periodOfPricing > p {
+    
+    padding-left: 8%;
 }
 
 .modal-content {

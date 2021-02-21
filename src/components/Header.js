@@ -10,6 +10,7 @@ function Header() {
                     alt=""
                     className="header__image"
                 />    
+                
             </div>
             <div className="header__bottom">
                 <h1 >Manage Campaigns</h1>

@@ -1,33 +1,3 @@
-/* .header {
-    position: absolute;
-    width: 1440px;
-    height: 80px;
-    left: 0px;
-    top: 0px;
-    background: #1F2640;
-    display: flex;
-    flex-direction: column;
-}
-
-.header__image {
-    position: absolute;
-    height: auto;
-    left: 182px;
-    top: 17px;
-}
-
-.header__bottom {
-    position: absolute;
-    left: 182px;
-    top: 120px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 50px;
-    color: #2B416C;
-} */
-
 .header {
     width: 100%;
     position: fixed;
@@ -37,6 +7,10 @@
     display: flex;
     flex-direction: column;
     z-index: 9;
+}
+
+.header__top {
+    display: flex;
 }
 
 
@@ -57,6 +31,11 @@
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 9%;
+}
+
+.dropdown {
+    margin-left: 41% !important;
+    margin-top: 1.5% !important;
 }
 
 @media screen and (max-width: 567px) {

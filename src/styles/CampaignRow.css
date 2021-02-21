@@ -26,7 +26,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 5px;
     color: #2B416C;
 }
 
@@ -264,14 +264,15 @@
 @media screen and (max-width: 670px) {
     .campaignRow {
         position: relative;
-        min-height: 200px;
+        min-height: 128px;
         width: 100%;
-        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 2px 10px rgb(0 0 0 / 30%);
         background-color: #F1F1F4;
-        margin-left: 0;
+        margin-left: 3px;
         padding-top: 50px;
-        margin-top: 0;
+        margin-top: 7px;
         margin-bottom: 26px;
+        border-radius: 22px;
     }
 
     .campaignRow__campaign {
@@ -293,23 +294,21 @@
 
     .campaignRow__date{
         position: absolute;
-        
-        top: 43%;
-        left: 29%;
+        top: 77px;
+        left: 35%;
         
         
     }
    
     .campaignRow__actions {
         position: absolute;
-        bottom: 0;
-        right: 20px;
-        
-        display: flex;
-        flex-direction: column;
-        width: 25px;
-        align-items: baseline;
-        height: 70%;
+    bottom: 0;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 25px;
+    align-items: baseline;
+    height: 103%;
     }
     .campaignRow__view {
         position: absolute;

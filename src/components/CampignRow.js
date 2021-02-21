@@ -96,7 +96,7 @@ function CampignRow({updateDate, campaign}) {
 
             <div className="campaignRow__campaign">
                 <div className="imageBox">
-                    <img src="https://i.ibb.co/CzZK9Bw/Bitmap.png" alt="" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/campaign-manager-aebc6.appspot.com/o/game_icons%2Fmotal_kombat%2FBitmap.png?alt=media&token=23901d53-2897-4670-9e01-a9f827d66c97" alt="" />
                 </div>
                 
                 <div className="campaign__info">
@@ -108,7 +108,7 @@ function CampignRow({updateDate, campaign}) {
                 <div className={`modalBackground modalShowing-${modalState}`}>
                     <div className="modal__inner">
                             <div className="modal__top">
-                                <img src="https://i.ibb.co/CzZK9Bw/Bitmap.png" alt="" />
+                                <img src="https://firebasestorage.googleapis.com/v0/b/campaign-manager-aebc6.appspot.com/o/game_icons%2Fmotal_kombat%2FBitmap.png?alt=media&token=23901d53-2897-4670-9e01-a9f827d66c97" alt="" />
                                 <div className="modal__info">
                                     <h3>{game_name}</h3>
                                     <p>{region}</p>
@@ -135,19 +135,19 @@ function CampignRow({updateDate, campaign}) {
                     </div>
                 </div>
             <div className="campaignRow__view" onClick={() => manageState()}>
-                <img src="https://i.ibb.co/c3d9rKR/Price.png" alt="" />
+                <img src="https://firebasestorage.googleapis.com/v0/b/campaign-manager-aebc6.appspot.com/o/icons%2FPrice.png?alt=media&token=7abec9f7-e7cd-4ef5-9c30-e8ac36b40e80" alt="" />
                 <p>View Pricing</p>
             </div>
 
             <div className="campaignRow__actions">
 
                 <div className="action__option csv">
-                    <img src="https://i.ibb.co/bmHX8Lj/file.png" alt="" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/campaign-manager-aebc6.appspot.com/o/icons%2Ffile.png?alt=media&token=2d09da81-b9e2-439f-b119-d8bfdc04bef6" alt="" />
                     <p>CSV</p>
                 </div>
 
                 <div className="action__option report">
-                    <img src="https://i.ibb.co/jVCsG33/statistics-report.png" alt="" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/campaign-manager-aebc6.appspot.com/o/icons%2Fstatistics-report.png?alt=media&token=6395afc7-9f17-45d8-82b9-c760a4216401" alt="" />
                     <p>Report</p>
                 </div>
 
@@ -167,7 +167,7 @@ function CampignRow({updateDate, campaign}) {
                     selected={campaign_creationDate}
                     onChange={date => onDateChange(id, date)}
                     customInput={<div className="action__option scheduleAgain">
-                    <img src="https://i.ibb.co/Xkjv8qr/calendar.png" alt="" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/campaign-manager-aebc6.appspot.com/o/icons%2Fcalendar.png?alt=media&token=0d1487b1-221c-4c61-882b-716d46387fa6" alt="" />
                     <p>Schedule Again</p>   
                     </div>
                                  }

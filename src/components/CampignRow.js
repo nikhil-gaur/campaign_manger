@@ -3,11 +3,20 @@ import "../styles/CampaignRow.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import ReactDOM from 'react-dom';
-import Modal from 'react-modal';
 import moment from "moment";
+import { Modal, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 
 function CampignRow({updateDate, campaign}) {
+
+    const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
 
 
     useEffect(() => {
@@ -105,7 +114,7 @@ function CampignRow({updateDate, campaign}) {
                 </div>
             </div>
            
-                <div className={`modalBackground modalShowing-${modalState}`}>
+                {/* <div className={`modalBackground modalShowing-${modalState}`}>
                     <div className="modal__inner">
                             <div className="modal__top">
                                 <img src="https://firebasestorage.googleapis.com/v0/b/campaign-manager-aebc6.appspot.com/o/game_icons%2Fmotal_kombat%2FBitmap.png?alt=media&token=23901d53-2897-4670-9e01-a9f827d66c97" alt="" />
@@ -133,11 +142,47 @@ function CampignRow({updateDate, campaign}) {
                                 <button onClick={() => manageState()}>Close</button>
                             </div>
                     </div>
-                </div>
-            <div className="campaignRow__view" onClick={() => manageState()}>
+                </div> */}
+            <div className="campaignRow__view" onClick={handleShow}>
                 <img src="https://firebasestorage.googleapis.com/v0/b/campaign-manager-aebc6.appspot.com/o/icons%2FPrice.png?alt=media&token=7abec9f7-e7cd-4ef5-9c30-e8ac36b40e80" alt="" />
                 <p>View Pricing</p>
             </div>
+
+            <Modal show={show} onHide={handleClose}>
+        
+        <Modal.Body><div className="modal__inner">
+                            <div className="modal__top">
+                                <img className="modal__image" src="https://firebasestorage.googleapis.com/v0/b/campaign-manager-aebc6.appspot.com/o/game_icons%2Fmotal_kombat%2FBitmap.png?alt=media&token=23901d53-2897-4670-9e01-a9f827d66c97" alt="" />
+                                <div className="modal__info">
+                                    <h3>{game_name}</h3>
+                                    <p>{region}</p>
+                                </div>
+                            </div>
+                            <div className="modal__bottom">
+                                <h1>Pricing</h1>
+                                <div className="periodOfPricing oneMonth">
+                                    <h3>1 Week-1Month</h3>
+                                    <p>:</p>
+                                    <p>        $100</p>
+                                </div>
+                                <div className="periodOfPricing sixMonth">
+                                    <h3>6 Month</h3>
+                                    <p>:</p>
+                                    <p>         $500</p>
+                                </div>
+                                <div className="periodOfPricing oneYear">
+                                    <h3>1 Year</h3>
+                                    <p>:</p>
+                                    <p>          $900</p>
+                                </div>
+                            </div>
+                            <div className="modalButton">
+                                <button onClick={handleClose}>Close</button>
+                            </div>
+                    </div></Modal.Body>
+                        
+                    </Modal>
+
 
             <div className="campaignRow__actions">
 

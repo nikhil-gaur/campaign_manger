@@ -168,7 +168,8 @@
 }
 
 .modal__info {
-    right: 0;
+    left: 53%;
+    top: 29%;
     position: absolute;
 }
 
@@ -193,14 +194,14 @@
     z-index: 100;
     background-color: white;
     border-radius: 3px;
-    border: 2px solid black;
+    
     max-width: 400px;
     max-height: 450px;
 }
 
 .modal__bottom {
-    margin-top: 41px;
-    margin-left: 20px;
+    margin-top: 25px;
+    margin-left: 5px;
 }
 .modal__bottom > h1 {
     color: #2B416C;
@@ -210,6 +211,7 @@
 .modal__info > p {
     color: #9CA2B7;
     font-size: 14px;
+    padding-left: 5%;
 }
 
 .periodOfPricing {
@@ -231,6 +233,14 @@
 .periodOfPricing > h3 {
     color: #7788A3;
     font-size: 16px;
+}
+
+.modal-content {
+    width: 75% !important;
+}
+
+.modal__image {
+    width: 48%;
 }
 
 
